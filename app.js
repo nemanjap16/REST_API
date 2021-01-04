@@ -6,7 +6,7 @@ const routes = require('./routes/routes')
 const app = express()
 
 // Database connection
-const dbconnect = `mongodb+srv://nemanja10:nemanja123@nemanja.qgpmy.mongodb.net/quotes?retryWrites=true&w=majority`
+const dbconnect = `mongodb+srv://nemanja10:nemanja123@nemanja.qgpmy.mongodb.net/quote?retryWrites=true&w=majority`
 mongoose.connect(dbconnect, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then(() => console.log(`Successfully connected to database.`))
   .catch((err) => console.log(err))
